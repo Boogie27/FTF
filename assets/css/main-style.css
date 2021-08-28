@@ -388,8 +388,20 @@ ul.ul-side-nav li a{
     }
 }
 @media only screen and (max-width: 992px){
-    .page-content-container .banner-title{
-       
+    .banner-title p{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 567px){
+    .banner-title{
+        height: 100%;
+        margin-bottom: 40px;
+    }
+    .banner-title p{
+        width: 100%;
+    }
+    .page-content-container .banner-btn{
+        position: static;
     }
 }
 .inner-content .item-img{
