@@ -183,6 +183,11 @@ a.btn-small{
     border-radius: 5px;
     background-color: rgb(128, 128, 128);
 }
+.nav-logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
 .navi-icon {
     display: none;
 }
@@ -452,6 +457,10 @@ ul.ul-drop-down li.drop-li a:hover{
 .sm-nav-logo{
     width: 90%;
 }
+.sm-nav-logo img{
+    width: 50px;
+    border-radius: 50%;
+}
 .side-nav-content button:focus{
     border: none;
     outline: none;
@@ -523,6 +532,9 @@ ul.ul-side-nav li a{
     margin-bottom: 40px;
     background-color: #fff;
     box-shadow: 0px 0px 8px 0px rgba(107, 107, 107, 0.582);
+}
+.content-body .inner-content:hover{
+    box-shadow: none;
 }
 .page-content-container.orange .inner-content{
     margin-bottom: 0px;
@@ -625,7 +637,13 @@ ul.ul-items li.item-btn  a.btn-view{
 }
 ul.ul-items li.item-btn  a.btn-view:hover{
     color: #fff;
-    background-color: rgb(168, 168, 168);;
+    background-color: rgb(168, 168, 168);
+}
+ul.ul-items li.item-btn  a.btn-heart{
+    font-size: 17px;
+    padding: 9px 12px;
+    color: rgb(168, 168, 168);
+    border: 1px solid rgb(168, 168, 168);
 }
 ul.ul-items li.item-btn  a.btn-cart{
     font-size: 17px;
