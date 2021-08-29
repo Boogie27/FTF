@@ -54,6 +54,11 @@ a {
 section{
     padding: 0px;
 }
+button:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
 /* ******** BUTTON ************* */
 a.btn-small{
     color: #fff;
@@ -138,6 +143,7 @@ a.btn-small{
     padding: 10px 10px;
     border-radius: 20px;
     background-color: #320a88;
+    border: 1px solid #5420c4;
 }
 .nav-search button{
     color: #fff;
@@ -517,7 +523,7 @@ ul.ul-side-nav li a{
 .page-content-container.orange{
     background-color: #EF8222;
 }
-.page-content-container.white{
+.page-content-container.purple{
     background-color: #442781;
 }
 .page-content-container.orange .inner-content:hover{
@@ -532,9 +538,6 @@ ul.ul-side-nav li a{
     margin-bottom: 40px;
     background-color: #fff;
     box-shadow: 0px 0px 8px 0px rgba(107, 107, 107, 0.582);
-}
-.content-body .inner-content:hover{
-    box-shadow: none;
 }
 .page-content-container.orange .inner-content{
     margin-bottom: 0px;
@@ -631,8 +634,10 @@ ul.ul-items li.item-btn a{
     border-radius: 2px;
 }
 ul.ul-items li.item-btn  a.btn-view{
-    font-size: 14px;
+    top: -1px;
+    font-size: 15px;
     cursor: pointer;
+    position: relative;
     border: 1px solid rgb(168, 168, 168);
 }
 ul.ul-items li.item-btn  a.btn-view:hover{
@@ -640,14 +645,14 @@ ul.ul-items li.item-btn  a.btn-view:hover{
     background-color: rgb(168, 168, 168);
 }
 ul.ul-items li.item-btn  a.btn-heart{
-    font-size: 17px;
-    padding: 9px 12px;
+    font-size: 19px;
+    padding: 8px 12px;
     color: rgb(168, 168, 168);
     border: 1px solid rgb(168, 168, 168);
 }
 ul.ul-items li.item-btn  a.btn-cart{
-    font-size: 17px;
-    padding: 9px 12px;
+    font-size: 19px;
+    padding: 8px 12px;
     color: rgb(99, 190, 99);
     border: 1px solid rgb(99, 190, 99);
 }
@@ -671,7 +676,112 @@ ul.ul-items li.item-btn  a.btn-cart:hover{
         padding-top: 7px;
     }
 }
-
+/* ********* PAGE SEARCH ***************** */
+.page-search-container{
+    margin-bottom: 50px;
+    box-shadow: 0px 3px 5px 0px rgba(175, 175, 175, 0.582);
+}
+.page-search-container .title-header{
+    padding: 20px;
+    font-size: 13px;
+}
+.page-search-container .title-header a{
+    font-size: 13px;
+}
+.page-search-content{
+    padding: 0px 20px;
+}
+.page-search-content input{
+    width: 80%;
+    padding: 13px;
+    color: #555;
+    border: 2px solid rgb(168, 168, 168);
+}
+.page-search-content input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.page-search-content button{
+    top: 2px;
+    right: 5px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 12px 20px;
+    position: relative;
+    background-color: #442781;
+    border-radius: 0px 5px 5px 0px;
+}
+.page-search-item h3{
+    font-size: 27px;
+}
+.page-search-item{
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 992px){
+    .page-search-item{
+        text-align: center;
+    }
+    .page-search-item p{
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 567px){
+    .page-search-item h3{
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 567px){
+    .page-search-item h3{
+        font-size: 23px;
+    }
+    .page-search-item p{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 567px){
+    .page-search-content input{
+        width: 70%;
+    }
+}
+/* ********* CATEGORY PAGE *********** */
+.category-bar-container{
+    margin-bottom: 50px;
+    border-top: 1px solid rgb(216, 216, 216);
+    /* background-color: rgb(250, 250, 250); */
+}
+.category-bar-container .title-header{
+    padding: 20px;
+}
+.category-bar-container .title-header h4{
+    color: #555;
+}
+.category-bar-content{
+    padding: 0px 20px;
+}
+ul.ul-category-links li{
+    display: inline-block;
+}
+ul.ul-category-links li a{
+    display: block;
+    margin: 0px 5px;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+    background-color: rgb(226, 226, 226);
+}
+ul.ul-category-links li a:hover{
+    color: #fff;
+    background-color: rgb(129, 129, 129);
+}
+@media only screen and (max-width: 567px){
+    ul.ul-category-links li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
 /* ****** NEWSLETTER SUBSCRIPTION ******** */
 .newsletter-container input{
     width: 100%;
@@ -714,17 +824,13 @@ ul.ul-items li.item-btn  a.btn-cart:hover{
 }
 @media only screen and (max-width: 567px){
     .newsletter-container input{
-        width: 220px;
+        width: 100%;
     }
-}
-@media only screen and (max-width: 398px){
     .newsletter-container{
         text-align: left;
     }
-    .newsletter-container input{
-        width: 100%;
-    }
 }
+
 /* ********* FOOTER ******** */
 .footer_bottom_area{
     color: #fff;
