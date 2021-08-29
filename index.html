@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="academy, college, coursera, courses, education, elearning, kindergarten, lms, lynda, online course, online education, school, training, udemy, university">
-<meta name="description" content="Edumy - LMS Online Education Course & School HTML Template">
+<meta name="description" content="TFT Online Education Course">
 <meta name="CreativeLayers" content="ATFN">
 <!-- css file -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 <div class="wrapper">
 
 <!-- preloader -->
-<section>
+<!-- <section>
     <div class="main-app-preloader" id="main_app_preloader">
         <div class="preloader-inner">
             <div class="inner-preloader-box">
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div> 
-</section> 
+</section>  -->
 
        
 <section class="navigation-section"><!-- navigation start-->
@@ -62,31 +62,122 @@
 						</ul>
 					</div>
 				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-shopping-cart"></i>
-					</a>
-				</li>
+				<li><a href="#">Subscribe</a></li>
 				<li><a href="#">Register</a></li>
 				<li><a href="#">Login</a></li>
 			</ul>
 		</div>
 		<div class="navi-icon">
-			<a href="#"><i class="fa fa-user"></i></a>
+			<a href="#" class="open-side-profile-navigation"><i class="fa fa-user"></i></a>
 		</div>
 	</div>
+</section><!-- navigation end-->	
+
+
+
+<section><!-- small navigation start-->
 	<div class="navigation-small">
 		<ul>
 			<li><a href="#">All items</a></li>
-			<li><a href="#">Wordpress</a></li>
-			<li><a href="#">Hosting</a></li>
-			<li><a href="#">Teachers</a></li>
+			<li>
+				<div class="drop-down drop-right">
+					<a href="#" class="drop-down-btn">Hosting <i class="fa fa-angle-down"></i></a>
+					<ul class="drop-down-body ul-drop-down drop-left">
+						<li class="drop-li"><a href="#">Books</a></li>
+						<li class="drop-li"><a href="#">Teachers</a></li>
+						<li class="drop-li"><a href="#">Development</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="drop-down drop-right">
+					<a href="#" class="drop-down-btn">Teahcing <i class="fa fa-angle-down"></i></a>
+					<ul class="drop-down-body ul-drop-down drop-left">
+						<li class="drop-li"><a href="#">Books</a></li>
+						<li class="drop-li"><a href="#">Teachers</a></li>
+						<li class="drop-li"><a href="#">Development</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="drop-down drop-right">
+					<a href="#" class="drop-down-btn">Blogging <i class="fa fa-angle-down"></i></a>
+					<ul class="drop-down-body ul-drop-down drop-left">
+						<li class="drop-li"><a href="#">Books</a></li>
+						<li class="drop-li"><a href="#">Teachers</a></li>
+						<li class="drop-li"><a href="#">Development</a></li>
+					</ul>
+				</div>
+			</li>
 			<li><a href="#">Students</a></li>
 			<li><a href="#">Developers</a></li>
 		</ul>
+		<ul class="ul-small-i">
+			<li>
+				<a href="#" title="Shopping cart">
+					<i class="fa fa-shopping-cart"></i>
+					<span class="badge bg-danger">3</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" title="Saved item">
+					<i class="fa fa-heart"></i>
+					<span class="badge bg-danger">1</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-bell"></i>
+					<span class="badge bg-danger">2</span>
+				</a>
+			</li>
+		</ul>
 	</div>
-</section><!-- navigation end-->	
-	
+</section><!-- small navigation end-->
+
+
+
+
+<section><!-- mobile small navigation start-->
+	<div class="navigation-small-mobile">
+		<ul>
+			<li>
+				<a href="#">
+					<i class="fa fa-bell"></i>
+					<span class="badge bg-danger">1</span>
+				</a>
+			</li>
+			<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+			<li><a href="#"><i class="fa fa-heart"></i></a></li>
+			<li><a href="#" id="open_modal_search"><i class="fa fa-search"></i></a></li>
+			<li>
+				<a href="#">
+					<i class="fa fa-bell"></i>
+					<span class="badge bg-danger">1</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section><!-- mobile small navigation end-->	
+
+
+
+
+<section class="modal-alert-popup" id="modal_popup_search"><!-- mobile search start -->
+	<div class="modal-confirm-container">
+		<div class="modal-confirm-dark-theme">
+			<div class="modal-inner-content">
+				<div class="confirm-header">
+					<form action="">
+						<input type="text" name="search" class="input-mobile-search" value="" placeholder="Search...">
+						<button type="submit" class="mobile-search-btn"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	<!-- mobile search end -->
+
 
 
 
@@ -114,6 +205,30 @@
 
 
 
+<section class="side-navigation-container"><!-- side profile navigation start-->
+	<div class="side-dark-theme" id="side_dark_theme"></div><!-- dark theme-->
+	<div class="side-nav-content right" id="side_profile_nav_content">
+		<div class="side-nav-btn-container">
+			<div class="sm-nav-logo"><b>LOGO HERE</b></div>
+			<button class="side-nav-close" id="side_profile_nav_close"><i class="fa fa-times"></i></button>
+		</div>
+		<ul class="ul-side-nav">
+			<li><a href="#">Account</a></li>
+			<li><a href="#">Change Password</a></li>
+			<li><a href="#">Register</a></li>
+			<li><a href="#">Login</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+	</div>
+</section><!-- side profile navigation end-->
+
+
+
+
+
+
+
+
 	
 <section><!-- Slider start-->
 	<div class="home2-slider">
@@ -122,7 +237,7 @@
 				<div class="col-lg-12">
 					<div class="main-banner-wrapper">
 					    <div class="banner-style-one owl-theme owl-carousel">
-					        <div class="slide slide-one sh2" style="background-image: url(assets/images/slider/4.jpg);">
+					        <div class="slide slide-one sh2" style="background-image: url(assets/images/slider/2.jpg);">
 					            <div class="container">
 					                <div class="row">
 					                    <div class="col-lg-12 text-center">
@@ -135,7 +250,7 @@
 					                </div>
 					            </div>
 					        </div>
-					        <div class="slide slide-one sh2" style="background-image: url(assets/images/slider/5.jpg);">
+					        <div class="slide slide-one sh2" style="background-image: url(assets/images/slider/1.jpg);">
 					            <div class="container">
 					                <div class="row">
 					                    <div class="col-lg-12 text-center">
@@ -148,7 +263,7 @@
 					                </div>
 					            </div>
 					        </div>
-					        <div class="slide slide-one sh2" style="background-image: url(assets/images/slider/7.jpeg);">
+					        <div class="slide slide-one sh2" style="background-image: url(assets/images/slider/3.jpg);">
 					            <div class="container">
 					                <div class="row">
 					                    <div class="col-lg-12 text-center">
@@ -411,6 +526,8 @@
 
 
 
+
+
 <section><!--page content start-->
     <div class="page-content-container arsh">
 		<div class="title-header text-center">
@@ -643,9 +760,298 @@
 
 
 
+<section><!--page content start-->
+    <div class="page-content-container">
+		<div class="title-header flex">
+			<h4>Newly Added Items</h4>
+			<a href="#" class="btn-small"><i class="fa fa-eye"></i> View all</a>
+		</div>
+		<div class="content-body"><!--content body start-->
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"><!-- content start-->
+					<div class="inner-content">
+						<div class="item-img">
+							<img src="assets/images/books/11.jpg" alt="">
+						</div>
+						<div class="item-body">
+							<div class="item-head">
+								<h4>The good things life brings</h4>
+								<p>this is just an example</p>
+							</div>
+							<div class="item-price"><b>₦6,000</b></div>
+							<ul class="ul-items">
+								<li class="item-star">
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="item-btn">
+									<a href="#" class="btn-view">view detail</a>
+									<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- content end-->
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"><!-- content start-->
+					<div class="inner-content">
+						<div class="item-img">
+							<img src="assets/images/books/10.jpg" alt="">
+						</div>
+						<div class="item-body">
+							<div class="item-head">
+								<h4>The good things life brings</h4>
+								<p>this is just an example</p>
+							</div>
+							<div class="item-price"><b>₦6,000</b></div>
+							<ul class="ul-items">
+								<li class="item-star">
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="item-btn">
+									<a href="#" class="btn-view">view detail</a>
+									<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- content end-->
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"><!-- content start-->
+					<div class="inner-content">
+						<div class="item-img">
+							<img src="assets/images/books/14.jpg" alt="">
+						</div>
+						<div class="item-body">
+							<div class="item-head">
+								<h4>The good things life brings</h4>
+								<p>this is just an example</p>
+							</div>
+							<div class="item-price"><b>₦6,000</b></div>
+							<ul class="ul-items">
+								<li class="item-star">
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="item-btn">
+									<a href="#" class="btn-view">view detail</a>
+									<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- content end-->
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"><!-- content start-->
+					<div class="inner-content">
+						<div class="item-img">
+							<img src="assets/images/books/15.jpg" alt="">
+						</div>
+						<div class="item-body">
+							<div class="item-head">
+								<h4>The good things life brings</h4>
+								<p>this is just an example</p>
+							</div>
+							<div class="item-price"><b>₦6,000</b></div>
+							<ul class="ul-items">
+								<li class="item-star">
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="item-btn">
+									<a href="#" class="btn-view">view detail</a>
+									<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- content end-->
+			</div>
+		</div><!--content body end-->
+	</div>
+</section><!--page content end-->
 
 
 
+
+<section><!-- newsletter start-->
+    <div class="page-content-container white">
+		<div class="content-body"><!--content body start-->
+			<div class="row">
+				<div class="col-xl-3 col-lg-12"><!-- content start-->
+					<div class="banner-title">
+						<h3>Subscribe to our amazing newsletters</h3>
+						<p>
+							By subscribing to our mailing list you will always be updated with the lastest news from us.
+						</p>
+						<div class="newsletter-container">
+							<form action="">
+								<input type="text" value="" placeholder="Enter email...">
+								<button type="button"><i class="fa fa-envelope-o"></i> Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div><!-- content end-->
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"><!-- content start-->
+					<div class="inner-content">
+						<div class="item-img">
+							<img src="assets/images/books/4.jpg" alt="">
+						</div>
+						<div class="item-body">
+							<div class="item-head">
+								<h4>The good things life brings</h4>
+								<p>this is just an example</p>
+							</div>
+							<div class="item-price"><b>₦6,000</b></div>
+							<ul class="ul-items">
+								<li class="item-star">
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="item-btn">
+									<a href="#" class="btn-view">view detail</a>
+									<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- content end-->
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"><!-- content start-->
+					<div class="inner-content">
+						<div class="item-img">
+							<img src="assets/images/books/5.jpg" alt="">
+						</div>
+						<div class="item-body">
+							<div class="item-head">
+								<h4>The good things life brings</h4>
+								<p>this is just an example</p>
+							</div>
+							<div class="item-price"><b>₦6,000</b></div>
+							<ul class="ul-items">
+								<li class="item-star">
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="item-btn">
+									<a href="#" class="btn-view">view detail</a>
+									<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- content end-->
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"><!-- content start-->
+					<div class="inner-content">
+						<div class="item-img">
+							<img src="assets/images/books/8.jpg" alt="">
+						</div>
+						<div class="item-body">
+							<div class="item-head">
+								<h4>The good things life brings</h4>
+								<p>this is just an example</p>
+							</div>
+							<div class="item-price"><b>₦6,000</b></div>
+							<ul class="ul-items">
+								<li class="item-star">
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</li>
+								<li class="item-btn">
+									<a href="#" class="btn-view">view detail</a>
+									<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- content end-->
+			</div>
+		</div><!--content body end-->
+	</div>
+</section><!--newsletter end-->
+
+
+
+
+<section><!--footer links start-->
+    <div class="footer-links-container">
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+					<div class="inner-footer">
+						<div class="title-header"><h3>LINKS</h3></div>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Categories</a></li>
+							<li><a href="#">Cart</a></li>
+							<li><a href="#">Whishlist</a></li>
+							<li><a href="#">Login</a></li>
+							<li><a href="#">Register</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+					<div class="inner-footer">
+						<div class="title-header"><h3>MEET TFT</h3></div>
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Condition</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Help center</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div class="inner-footer">
+							<div class="title-header"><h3>CONTACT</h3></div>
+							<ul>
+								<li><a href="#"><i class="fa fa-user"></i> About:  You Are Just some steps away from finding a great item</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i> Phone: 08012345678 </a></li>
+								<li><a href="#"><i class="fa fa-envelope-o"></i> Email: example@gmale.com </a></li>
+								<li><a href="#"><i class="fa fa-map-marker"></i>  Lekki Phase 1, Lagos Nigeria. </a></li>
+							</ul>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section><!--footer links end-->
+
+
+<section><!--footer logo start-->
+	<div class="footer-logo">
+		<div class="footer-logo-content">
+			<div class="inner-footer-logo"><b>LOGO HERE</b></div>
+			<div class="inner-social-media">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-whatsapp"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+</section><!--footer logo end-->
 	
 
 

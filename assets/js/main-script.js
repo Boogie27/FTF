@@ -57,12 +57,40 @@ function mobile_navigation(navState){
 
 
 
+// ********** OPEN PROFILE SIDE NAVIGATION ************//
+$(".open-side-profile-navigation").click(function(e){
+    e.preventDefault()
+    mobile_profile_navigation(true)
+})
+
+
+// ********** CLOSE SIDE NAVIGATION ************//
+$("#side_profile_nav_close").click(function(e){
+    e.preventDefault()
+    mobile_profile_navigation(false)
+})
+
+
+function mobile_profile_navigation(navState){
+    if(navState){
+        right = '0px'
+        $("#side_dark_theme").show()
+    }else{
+        right = '-500px'
+        $("#side_dark_theme").hide()
+    }
+    $("#side_profile_nav_content").css({
+        right: right,
+    })
+}
+
 
 
 // ********** CLICK DARK SKIN TO CLOSE SIDE NAVIGATION ************//
 function darkskin_close_mobile_navigation(){
     $("#side_dark_theme").click(function(){
         mobile_navigation(false)
+        mobile_profile_navigation(false)
     })
 }
 darkskin_close_mobile_navigation()
@@ -111,6 +139,35 @@ page_slider()
 
 
 
+
+
+
+
+
+// ********* OPEN MODAL SEARCH FORM *********//
+$("#open_modal_search").click(function(e){
+    e.preventDefault()
+    $("#modal_popup_search").show()
+})
+
+
+
+
+// ********* CLOSE MODAL CONFIRM BOX *********//
+$(".confirm-box-close").click(function(e){
+    e.preventDefault()
+    $(".modal-alert-popup").hide()
+})
+
+
+
+// ********* DARK SKIN CLOSE MODAL CONFIRM BOX *********//
+$(window).click(function(e){
+    if($(e.target).hasClass('modal-confirm-dark-theme'))
+    {
+        $(".modal-alert-popup").hide()
+    }
+})
 
 
 
