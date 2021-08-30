@@ -376,7 +376,7 @@ button.confirm-btn:hover{
 ul.ul-drop-down{
     top: 40px;
     right: 0px;
-    z-index: 10;
+    z-index: 20;
     width: 200px;
     margin: 0px;
     display: none;
@@ -451,17 +451,16 @@ ul.ul-drop-down li.drop-li a:hover{
 .side-nav-btn-container{
     padding: 10px;
     display: flex;
+    width: 100%;
     height: 80px;
     align-items: center;
     background-color: #442781;
+    justify-content: space-between;
 }
 .side-nav-content button{
     border: none;
     color: #fff;
     background-color:  transparent;
-}
-.sm-nav-logo{
-    width: 90%;
 }
 .sm-nav-logo img{
     width: 50px;
@@ -691,18 +690,21 @@ ul.ul-items li.item-btn  a.btn-cart:hover{
 .page-search-content{
     padding: 0px 20px;
 }
-.page-search-content input{
-    width: 80%;
+.page-search-item{
+    display: flex;
+}
+.page-search-item input{
+    width: 90%;
     padding: 13px;
     color: #555;
     border: 2px solid rgb(168, 168, 168);
 }
-.page-search-content input:focus{
+.page-search-item input:focus{
     outline: none;
     box-shadow: none;
 }
-.page-search-content button{
-    top: 2px;
+.page-search-item button{
+    top: 0px;
     right: 5px;
     color: #fff;
     border: none;
@@ -739,11 +741,6 @@ ul.ul-items li.item-btn  a.btn-cart:hover{
         font-size: 13px;
     }
 }
-@media only screen and (max-width: 567px){
-    .page-search-content input{
-        width: 70%;
-    }
-}
 /* ********* CATEGORY PAGE *********** */
 .category-bar-container{
     margin-bottom: 50px;
@@ -759,9 +756,10 @@ ul.ul-items li.item-btn  a.btn-cart:hover{
 .category-bar-content{
     padding: 0px 20px;
 }
-ul.ul-category-links li{
+ul.ul-category-links li.li-category-links{
     display: inline-block;
 }
+
 ul.ul-category-links li a{
     display: block;
     margin: 0px 5px;
@@ -775,6 +773,18 @@ ul.ul-category-links li a{
 ul.ul-category-links li a:hover{
     color: #fff;
     background-color: rgb(129, 129, 129);
+}
+ul.ul-category-links ul.ul-drop-down{
+    top: 50px;
+    /* width: 300px; */
+}
+ul.ul-category-links ul.ul-drop-down li{
+    display: block;
+}
+ul.ul-category-links ul.ul-drop-down li a{
+    margin: 0px;
+    padding: 10px;
+    background-color: #fff;
 }
 @media only screen and (max-width: 567px){
     ul.ul-category-links li a{

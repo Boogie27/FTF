@@ -15,9 +15,11 @@ setTimeout(function(){
 $(window).click(function(e){
     $('.drop-down-body').hide()
     if($(e.target).hasClass('drop-down-btn') || $(e.target).hasClass('drop-down-body')){
+        e.preventDefault()
         $(e.target).parent().children('.drop-down-body').show()
     }
     if($(e.target).hasClass('drop-down-header')){
+        e.preventDefault()
         $(e.target).parent().parent().children('.drop-down-body').show()
     }
 })
@@ -88,7 +90,8 @@ function mobile_profile_navigation(navState){
 
 // ********** CLICK DARK SKIN TO CLOSE SIDE NAVIGATION ************//
 function darkskin_close_mobile_navigation(){
-    $("#side_dark_theme").click(function(){
+    $("#side_dark_theme").click(function(e){
+        e.preventDefault()
         mobile_navigation(false)
         mobile_profile_navigation(false)
     })
@@ -165,6 +168,7 @@ $(".confirm-box-close").click(function(e){
 $(window).click(function(e){
     if($(e.target).hasClass('modal-confirm-dark-theme'))
     {
+        e.preventDefault()
         $(".modal-alert-popup").hide()
     }
 })
