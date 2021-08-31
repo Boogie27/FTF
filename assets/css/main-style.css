@@ -229,7 +229,7 @@ ul.ul-small-i li a span.badge{
 .navigation-small-mobile{
     display: none;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: rgb(243, 243, 243);
 }
 .navigation-small-mobile ul{
     display: flex;
@@ -513,7 +513,9 @@ ul.ul-side-nav li a{
     .banner-style-one{
         height: 100%;
     }
-    
+    .banner-style-one h3.banner-title{
+        font-size: 35px;
+    }
 }
 @media only screen and (max-width: 567px){
     .banner-style-one p, .banner-style-one .banner-btn{
@@ -732,7 +734,7 @@ ul.ul-items li.item-btn  a.btn-cart:hover{
     }
     ul.ul-items li.item-btn  a.btn-view{
         top: -3px;
-        padding: 11px;
+        padding: 11.5px;
         font-size: 12px;
     }
     ul.ul-items li.item-btn  a.btn-cart{
