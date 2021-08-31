@@ -67,6 +67,13 @@ a.btn-small{
     padding: 5px 20px;
     background-color: #442781;
 }
+a.btn-big{
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: #442781;
+}
 /* ********* MAIN APP PRELOADER *********** */
 .main-app-preloader{
     height: 100vh;
@@ -540,6 +547,9 @@ ul.ul-side-nav li a{
 .page-content-container.arsh{
     background-color: rgb(248, 248, 248);
 }
+.page-content-container.arsh-1{
+    background-color: rgb(230, 230, 230);
+}
 .page-content-container.orange{
     background-color: #EF8222;
 }
@@ -553,7 +563,7 @@ ul.ul-side-nav li a{
     padding: 20px 0px;
 }
 .inner-content{
-    height: 300px;
+    /* height: 300px; */
     border-radius: 5px;
     margin-bottom: 40px;
     background-color: #fff;
@@ -577,13 +587,44 @@ ul.ul-side-nav li a{
     border-radius: 5px;
     background-color: #fff;
 }
+.banner-big{
+    height: 100%;
+    display: table;
+}
+.banner-big .centered{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner-big h3{
+    font-size: 42px;
+    font-weight: 300;
+}
+.banner-big p{
+    font-size: 16px;
+}
+.banner-big p, .banner-big h3{
+    color: #555;
+}
+.banner-big .banner-btn a{
+    color: #fff;
+    background-color: rgb(75, 170, 75);
+    border-bottom: 2px solid rgb(47, 117, 47);
+}
 @media only screen and (max-width: 1125px){
     .banner-title{
         height: 230px;
     }
+    .banner-big{
+        margin-bottom: 20px;
+    }
     .banner-title p{
         width: 50%;
         font-weight: 600;
+    }
+    .banner-big, .banner-big p{
+        width: 100%;
+        text-align: center;
     }
     .page-content-container .banner-btn{
         top: 15px;
@@ -741,6 +782,14 @@ ul.ul-items li.item-btn  a.btn-cart:hover{
 }
 .page-search-item{
     margin-bottom: 20px;
+}
+h3.bold{
+    color: #555;
+    font-size: 35px;
+}
+p.bold{
+    color: #555;
+    font-size: 18px;
 }
 @media only screen and (max-width: 992px){
     .page-search-item{
